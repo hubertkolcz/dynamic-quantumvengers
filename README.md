@@ -1,18 +1,27 @@
 # Dynamic Quantumvengers: benchmarking noisy quantum hardware with dynamic circuits and error correction
 
-This is a team project created for the IBM challenge of **QRISE 2024**, run by Quantum Coalition. The
-team explored how dynamic circuits (mid-circuit measurement, reset and feed-forward),
+This is a team project created for the IBM Dynamic Circuit Challenge of **QRISE 2024**, run by
+Quantum Coalition, where it won **first place**. The team explored how dynamic circuits (mid-circuit measurement, reset and feed-forward),
 quantum error-correction ideas and randomized techniques can be used to benchmark and protect quantum
 operations on noisy hardware. All experiments use Qiskit simulators with noise models.
 
 ## Context and later work
 
-- **Origin:** the project was created in April 2024 as the team's submission to the IBM challenge of
-  QRISE 2024.
-- **Poster:** it was later presented as a poster in Brno, Czech Republic, in 2025.
+- **Origin:** the project was created in April 2024 as the team's submission to the IBM Dynamic
+  Circuit Challenge of QRISE 2024, where it won first place.
+- **Poster:** the results were developed into the poster *Lie Algebraic Structures in Quantum Error
+  Correction for Measurement-Based Quantum Computing* (Hubert Kołcz, Ayeman Fatima, Umi Yamaguchi).
+  It was presented at the conference
+  [Differential Geometry and its Applications (DGA 2025)](https://conference.math.muni.cz/dga2025/)
+  in Brno, Czech Republic, in September 2025, and its experimental validation uses this project's
+  teleportation and GHZ results. The poster is in [`poster/`](poster/) and in the
+  [Warsaw University of Technology repository](https://repo.pw.edu.pl/info/report/WUT7015b3f80222482a88730392529b78d2/)
+  (CC BY 4.0).
 - **Follow-up projects:**
   - It is the predecessor of [low-cost-home-made-qc](https://github.com/hubertkolcz/low-cost-home-made-qc),
-    a project on a low-cost, home-made quantum computer.
+    a project on a low-cost, home-made quantum computer. That project was presented as a poster at
+    the Student IT/EE Workshop at Warsaw University of Technology in April 2025, where it won first
+    place.
   - It is the conceptual basis of
     [Lie-Poisson geometric criteria for classical optical emulation in MBQC](https://github.com/hubertkolcz/Lie-Poisson-geometric-criteria-for-classical-optical-emulation-in-MBQC),
     a study prepared for the 46th Winter School Geometry and Physics (Srní, 2026). That repository
@@ -38,6 +47,7 @@ operations on noisy hardware. All experiments use Qiskit simulators with noise m
 | `QRISE_FINAL_AYEMAN_FATIMA_.ipynb` | Teleportation in three cases (plain, Rx(5π/7) and Rx(2π/7)), with randomized measurement and a quantum-controlled error-correction circuit. |
 | `RESULTS for Qrise Ayeman Fatima.docx` | Results report for the teleportation experiments. |
 | `QRISE Video Presentation.mp4` | The team's video presentation. |
+| `poster/Lie_Algebraic_Structures_QEC_MBQC_poster_DGA2025.pdf` | The DGA 2025 poster (CC BY 4.0), without the cover page that the university repository adds. |
 
 ## Selected results (simulated)
 
@@ -76,5 +86,6 @@ Newer Qiskit releases may need small changes.
 
 ## Licence
 
-No licence has been chosen for this team project, so the files remain the property of their authors.
-Please contact the team before reusing them.
+The poster in `poster/` is licensed under CC BY 4.0. No licence has been chosen for the other files of
+this team project, so they remain the property of their authors. Please contact the team before
+reusing them.
